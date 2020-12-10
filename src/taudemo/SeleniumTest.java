@@ -32,5 +32,11 @@ public class SeleniumTest {
         assertEquals(expectedTitle, driver.getTitle());
     }
 
+    @Test
+    public void openTheOrgPageAndCheckTheTitle() {
+        String expectedOrgTitle = "Example title";
+        driver.get("https://www.example.org");
+        assertEquals(expectedOrgTitle, driver.getTitle());
+
 
     }
